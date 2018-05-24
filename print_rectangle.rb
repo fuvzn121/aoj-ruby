@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 h_arr = []
 w_arr = []
-while true
+loop do
   h, w = gets.split.map(&:to_i)
   break if h == 0 && w == 0
   h_arr.push(h)
@@ -9,9 +11,9 @@ end
 h_arr.zip(w_arr) do |h, w|
   h.times do
     w.times do
-      print "#"
+      print '#'
     end
-    puts ""
+    puts ''
   end
-  puts ""
+  puts ''
 end

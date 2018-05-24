@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 1000.times do
-  puts "Hello World"
+  puts 'Hello World'
 end

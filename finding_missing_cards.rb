@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 n = gets.to_i
 sample = []
 s = []
@@ -10,11 +12,11 @@ end
 n.times do
   a, b = gets.split.map(&:to_s)
   case a
-  when "S"
+  when 'S'
     s.push(b)
-  when "H"
+  when 'H'
     h.push(b)
-  when "C"
+  when 'C'
     c.push(b)
   else
     d.push(b)
@@ -24,16 +26,16 @@ s = s.sort
 h = s.sort
 c = s.sort
 d = s.sort
-puts ""
+puts ''
 sample.each do |num|
-  puts "S " + num.to_s unless s.include?(num)
+  puts 'S ' + num.to_s unless s.include?(num)
 end
 sample.each do |num|
-  puts "H " + num.to_s unless h.include?(num)
+  puts 'H ' + num.to_s unless h.include?(num)
 end
 sample.each do |num|
-  puts "C " + num.to_s unless c.include?(num)
+  puts 'C ' + num.to_s unless c.include?(num)
 end
 sample.each do |num|
-  puts "D " + num.to_s unless d.include?(num)
+  puts 'D ' + num.to_s unless d.include?(num)
 end
