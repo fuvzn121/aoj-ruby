@@ -28,6 +28,7 @@ c = s.sort
 d = s.sort
 puts ''
 sample.each do |num|
+  p s
   puts 'S ' + num.to_s unless s.include?(num)
 end
 sample.each do |num|
